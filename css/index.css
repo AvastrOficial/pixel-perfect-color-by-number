@@ -26,18 +26,22 @@ body
   width: 50px;
   height: 50px;
 
+  min-width: 50px;
+
   background-color: #ffffff;
   font-family:Arial, Helvetica, sans-serif;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .palette-container
 {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
+  width: auto;
 
   margin-right: 20px;
 }
