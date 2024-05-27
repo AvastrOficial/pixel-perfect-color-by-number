@@ -46,12 +46,23 @@ export class ControlPanel implements IGuiElement
         this._gridRowsSlider.oninput = () => this._gridRowsInput.value = this._gridRowsSlider.value;
         this._paletteSizeSlider.oninput = () => this._paletteSizeInput.value = this._paletteSizeSlider.value;
 
-        this._gridColumnsInput.oninput = () =>
-            this.inputToSliderHandler(this._gridColumnsInput, this._gridColumnsSlider, 1, 200);
-        this._gridRowsInput.oninput = () =>
-            this.inputToSliderHandler(this._gridRowsInput, this._gridRowsSlider, 1, 200);
-        this._paletteSizeInput.oninput = () =>
-            this.inputToSliderHandler(this._paletteSizeInput, this._paletteSizeSlider, 1, 20);
+        this._gridColumnsInput.oninput = () => this.inputToSliderHandler(
+            this._gridColumnsInput,
+            this._gridColumnsSlider,
+            parseInt(this._gridColumnsSlider.min),
+            parseInt(this._gridColumnsSlider.max));
+
+        this._gridRowsInput.oninput = () => this.inputToSliderHandler(
+            this._gridRowsInput,
+            this._gridRowsSlider,
+            parseInt(this._gridRowsSlider.min),
+            parseInt(this._gridRowsSlider.max));
+
+        this._paletteSizeInput.oninput = () => this.inputToSliderHandler(
+            this._paletteSizeInput,
+            this._paletteSizeSlider,
+            parseInt(this._paletteSizeSlider.min),
+            parseInt(this._paletteSizeSlider.max));
     };
 
     /**
