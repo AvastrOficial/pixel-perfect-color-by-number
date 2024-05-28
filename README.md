@@ -29,6 +29,8 @@ Update: I have added a live demo of the game. You can play the game by visiting 
 - Left click on a color in the palette tray to select it.
 - Hold left click and drag on the palette tray to scroll through the colors (if the palette is larger than the tray).
 
+[pixel-perfect_demo.webm](https://github.com/AlanElMago/pixel-perfect-color-by-number/assets/53925066/5a2054d1-69aa-489e-8bef-ed21b9bc211b)
+
 ## Technologies Used
 - HTML
 - CSS
