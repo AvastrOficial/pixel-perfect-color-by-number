@@ -3,6 +3,7 @@
 - [Description](#description)
 - [Features](#features)
 - [Installation/Set-up](#installationset-up)
+- [How to Play](#how-to-play)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
@@ -17,7 +18,18 @@ Pixel Perfect - Color by Number is an open source project that attempts to mimic
 - Panning and zooming
 
 ## Installation/Set-up
-There is currently no straightforward way to install the game. However, you can clone the repository and play the game by running a local server (I use the Live Server extension in Visual Studio Code). Compile the TypeScript files using the `tsc` command. The compiled JavaScript files will be located in a folder called `dist`. The entry point for the game is `index.html`. I will be working on making the game more accessible in the future.
+There is currently no straightforward way to install the game. However, you can clone the repository and play the game by running a local server (I use the Live Server extension in Visual Studio Code). Compile the TypeScript files using the `tsc` command. The compiled JavaScript files will be located in a folder called `dist`. The entry point for the game is `index.html`.
+
+Update: I have added a live demo of the game. You can play the game by visiting the following link: [Pixel Perfect - Color by Number](https://pixel-perfect-color-by-number.vercel.app/)
+
+# How to Play
+- Hold left click and drag on the grid to paint.
+- Hold right click and drag on the grid to pan.
+- Scroll on the grid to zoom in and out.
+- Left click on a color in the palette tray to select it.
+- Hold left click and drag on the palette tray to scroll through the colors (if the palette is larger than the tray).
+
+[pixel-perfect_demo.webm](https://github.com/AlanElMago/pixel-perfect-color-by-number/assets/53925066/5a2054d1-69aa-489e-8bef-ed21b9bc211b)
 
 ## Technologies Used
 - HTML

@@ -41,6 +41,8 @@ export class Toolbar implements IGuiElement
             this._paletteTrayDiv.appendChild(colorSample);
         });
 
+        this._paletteTrayDiv.onmousemove = this.scrollPaletteTray;
+
         this.setSelectedColorIndex(0);
     }
 
@@ -71,4 +73,18 @@ export class Toolbar implements IGuiElement
      * @returns {number} The index of the selected color.
      */
     public getSelectedColorIndex = (): number => this._selectedColorIndex;
+
+    /**
+     * Scroll the palette tray div when the mouse is moved while the left mouse button is pressed.
+     * @param {MouseEvent} event - The mouse event.
+     */
+    private scrollPaletteTray = (event: MouseEvent) =>
+    {
+        if (event.buttons !== 1) // check if left mouse button is pressed
+        {
+            return;
+        }
+
+        this._paletteTrayDiv.scrollLeft -= event.movementX;
+    }
 }
