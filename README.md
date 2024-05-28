@@ -23,9 +23,11 @@ There is currently no straightforward way to install the game. However, you can 
 Update: I have added a live demo of the game. You can play the game by visiting the following link: [Pixel Perfect - Color by Number](https://pixel-perfect-color-by-number.vercel.app/)
 
 # How to Play
-- Left click and hold to paint.
-- Right click and hold to pan the grid.
-- Scroll to zoom in and out.
+- Hold left click and drag on the grid to paint.
+- Hold right click and drag on the grid to pan.
+- Scroll on the grid to zoom in and out.
+- Left click on a color in the palette tray to select it.
+- Hold left click and drag on the palette tray to scroll through the colors (if the palette is larger than the tray).
 
 ## Technologies Used
 - HTML
